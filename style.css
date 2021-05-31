@@ -27,7 +27,7 @@
 }
 
 #navbar a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #222;
     text-align: center;
@@ -37,6 +37,29 @@
 
 #navbar a:hover {
     text-decoration: underline;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: .8;
+    text-transform: none;
+    letter-spacing: normal;
+
+    direction: ltr;
+
+}
+
+.material-icons-outlined:hover {
+    border-radius: 50%;
+    background-color: rgba(211, 211, 211, 0.58);
+    padding: 10px;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
 }
 
 /*----------MAIN AREA--------*/
