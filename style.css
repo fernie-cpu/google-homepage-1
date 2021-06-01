@@ -25,12 +25,10 @@
     float: left;
 }
 
-
-/* we don't need to specify that since we used justify content to put a space in between the sections
 #right {
-    float: right;
+    display: flex; /* we have to make it a flex container too, to center the items. so you avoid using margin-top, for example */
+    align-items: center; 
 }
-*/
 
 #navbar a {
     display: inline-block;
