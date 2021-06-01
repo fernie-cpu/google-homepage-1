@@ -15,23 +15,29 @@
 
 #navbar ul {
     list-style-type: none;
+    display: flex; /* make it a flex container */
+    justify-content: space-between; /* this will create a space in between the sections "left" and "right" */
+    align-items: center; /* this will center horizontally everything in the ul */
+    height: 43px; /* for align-items to work, we have to specify the height of the element */
 }
 
 #navbar li {
     float: left;
-
 }
 
+
+/* we don't need to specify that since we used justify content to put a space in between the sections
 #right {
     float: right;
 }
+*/
 
 #navbar a {
     display: inline-block;
     text-decoration: none;
     color: #222;
     text-align: center;
-    padding-top: 20px;
+   /* padding-top: 20px; we don't need this padding in the link since we are centering everything with align-items */ 
     margin: auto 15px;
 }
 
@@ -48,7 +54,7 @@
     line-height: .8;
     text-transform: none;
     letter-spacing: normal;
-
+    padding: 10px; /* we need to specify the padding here since we're telling CSS we want a padding of 10px on hover, otherwise, that problem happens */
     direction: ltr;
 
 }
